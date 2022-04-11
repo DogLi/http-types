@@ -731,7 +731,6 @@ mod test {
     }
 
     #[test]
-    #[should_panic(expected = "Could not convert into a valid `StatusCode`")]
     fn construct_shorthand_with_invalid_status_code() {
         let _res = Response::new(600);
     }
